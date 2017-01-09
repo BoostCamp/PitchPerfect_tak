@@ -68,6 +68,14 @@ class PlaySoundViewController: UIViewController {
         configureUI(.notPlaying)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // to process when user clicked back button
+        if (self.isMovingFromParentViewController){
+            stopAudio()
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
