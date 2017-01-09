@@ -9,3 +9,5 @@ The Pitch Perfect app allows users to record a sound using the device's micropho
 - Echo
 - Reverb
 
+## License
+2016 [MIT](http://opensource.org/licenses/mit-license.php) ©njir
