@@ -9,20 +9,22 @@ The Pitch Perfect app allows users to record a sound using the device's micropho
 - Echo
 - Reverb
 
-## Added item
+## Kick item
 Two features have been added to original project.
 - Display recoding time
-- Progress bar while playing audio
+- Progress bar with time while playing audio
+
+## Video
+[![Video](http://img.youtube.com/vi/YEO3tpPrxmc/0.jpg)](https://youtu.be/YEO3tpPrxmc)
 
 ## Screenshots
 <img src="https://cloud.githubusercontent.com/assets/7614353/21830883/465646f6-d7e3-11e6-8e4c-1c7f9d08aa21.png" />
 <img src="https://cloud.githubusercontent.com/assets/7614353/21830884/4687daae-d7e3-11e6-9d31-ebd480d282ef.png" />
-<img src="https://cloud.githubusercontent.com/assets/7614353/21830885/46a6f880-d7e3-11e6-9364-ec18742330e0.png" />
-<img src="https://cloud.githubusercontent.com/assets/7614353/21830886/46b95fa2-d7e3-11e6-9c69-b472c219e483.png" />
+<img src="https://cloud.githubusercontent.com/assets/7614353/21891964/93160838-d918-11e6-98cf-79915a9acede.png" />
+<img src="https://cloud.githubusercontent.com/assets/7614353/21891977/97aa70aa-d918-11e6-822e-76e0bf301a43.png" />
 
 ## Author
-Hyungtak Jin, http://njir.github.io
-
+[Hyungtak Jin](https://kr.linkedin.com/in/hyungtak), http://njir.github.io
 
 ## License
 2017 [MIT](http://opensource.org/licenses/mit-license.php) @njir

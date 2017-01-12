@@ -29,7 +29,7 @@ public class myCustomSlider: UISlider {
         let valueDifference: CGFloat = CGFloat(self.value - self.minimumValue)
         let valueRatio: CGFloat = CGFloat(valueDifference/valueOffset)
         let labelXPos = CGFloat(labelXOffset*valueRatio + labelXMin!)
-        label.frame = CGRectMake(labelXPos,self.frame.origin.y + 15, 200, 25)
+        label.frame = CGRectMake(labelXPos,self.frame.origin.y, 200, 25)
         label.text = self.value.description
         self.superview!.addSubview(label)
         
@@ -41,7 +41,7 @@ public class myCustomSlider: UISlider {
         let valueDifference: CGFloat = CGFloat(self.value - self.minimumValue)
         let valueRatio: CGFloat = CGFloat(valueDifference/valueOffset)
         let labelXPos = CGFloat(labelXOffset*valueRatio + labelXMin!)
-        label.frame = CGRectMake(labelXPos - label.frame.width/2,self.frame.origin.y + 15, 200, 25)
+        label.frame = CGRectMake(labelXPos - label.frame.width/2,self.frame.origin.y, 200, 25)
         label.textAlignment = NSTextAlignment.center
         self.superview!.addSubview(label)
     }
