@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		847186AC1E27B9CC00DB7ADE /* myCustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847186AB1E27B9CC00DB7ADE /* myCustomSlider.swift */; };
 		84B8D2251E18E7250012E6AE /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8D2241E18E7250012E6AE /* PlaySoundViewController.swift */; };
 		84B8D2271E1901BF0012E6AE /* playsoundsviewcontroller-audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8D2261E1901BF0012E6AE /* playsoundsviewcontroller-audio.swift */; };
 		84FEC3BF1E17815200EC1635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC3BE1E17815200EC1635 /* AppDelegate.swift */; };
@@ -17,7 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84B781E51E2254CC00EA13F4 /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PitchPerfect.app; path = "/Users/njir/workspace/boostcamp/PitchPerfect/build/Debug-iphoneos/PitchPerfect.app"; sourceTree = "<absolute>"; };
+		847186AA1E27B9B800DB7ADE /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		847186AB1E27B9CC00DB7ADE /* myCustomSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCustomSlider.swift; sourceTree = "<group>"; };
 		84B8D2241E18E7250012E6AE /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
 		84B8D2261E1901BF0012E6AE /* playsoundsviewcontroller-audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "playsoundsviewcontroller-audio.swift"; sourceTree = "<group>"; };
 		84FEC3BE1E17815200EC1635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				84FEC3BD1E17815200EC1635 /* PitchPerfect */,
+				847186AA1E27B9B800DB7ADE /* PitchPerfect.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +60,7 @@
 				84FEC3C51E17815200EC1635 /* Assets.xcassets */,
 				84FEC3C71E17815200EC1635 /* LaunchScreen.storyboard */,
 				84FEC3CA1E17815200EC1635 /* Info.plist */,
+				847186AB1E27B9CC00DB7ADE /* myCustomSlider.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -78,7 +82,7 @@
 			);
 			name = PitchPerfect;
 			productName = PitchPerfect;
-			productReference = 84B781E51E2254CC00EA13F4 /* PitchPerfect.app */;
+			productReference = 847186AA1E27B9B800DB7ADE /* PitchPerfect.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,6 +140,7 @@
 			files = (
 				84FEC3C11E17815200EC1635 /* RecordSoundViewController.swift in Sources */,
 				84B8D2251E18E7250012E6AE /* PlaySoundViewController.swift in Sources */,
+				847186AC1E27B9CC00DB7ADE /* myCustomSlider.swift in Sources */,
 				84FEC3BF1E17815200EC1635 /* AppDelegate.swift in Sources */,
 				84B8D2271E1901BF0012E6AE /* playsoundsviewcontroller-audio.swift in Sources */,
 			);
