@@ -37,13 +37,23 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         
         // to record voice
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
-        let recordingName = "recordedVoice.wmv"
+        let recordingName = "recordedVoice.aac"
         let pathArray = [dirPath, recordingName]
         let filePath = URL(string: pathArray.joined(separator: "/"))
+        let recordSettings = [
+            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+            AVSampleRateKey: 44100.0,
+            AVNumberOfChannelsKey: 2 as NSNumber,
+            AVLinearPCMBitDepthKey: 16 as NSNumber,
+            AVLinearPCMIsBigEndianKey: false as NSNumber,
+            AVLinearPCMIsFloatKey: false as NSNumber,
+            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+        ] as [String : Any]
+        
         
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: AVAudioSessionCategoryOptions.defaultToSpeaker)
-        try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
+        try! audioRecorder = AVAudioRecorder(url: filePath!, settings: recordSettings)
         audioRecorder.delegate = self
         audioRecorder.isMeteringEnabled = true
         audioRecorder.prepareToRecord()
@@ -74,7 +84,7 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "stopRecording" {
             let playSoundsVC = segue.destination as! PlaySoundViewController
-            let recordedAudioURL = sender as! URL
+            let recordedAudioURL = sender as! URL // playSoundsViewCon
             playSoundsVC.recordedAudioURL = recordedAudioURL // set URL to PlaySoundViewController
         }
     }
